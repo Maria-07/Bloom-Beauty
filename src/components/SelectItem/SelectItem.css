@@ -1,0 +1,11 @@
+.item {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+img {
+    margin-right: 1em;
+    height: 30px;
+    width: 30px;
+}

@@ -1,12 +1,24 @@
+.cart {
+    position: sticky;
+    top: 0;
+    padding: 30px 20px;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
 .cart h2 {
     font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
-    margin-bottom: 5em;
+    margin-bottom: 2em;
 }
 
 .choose-btn,
 .choose-again {
+    margin-top: 2em;
     font-weight: 500;
     font-size: 1em;
     padding: 10px 20px;
