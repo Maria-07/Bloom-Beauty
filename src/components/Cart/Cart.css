@@ -1,0 +1,31 @@
+.cart h2 {
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    margin-bottom: 5em;
+}
+
+.choose-btn,
+.choose-again {
+    font-weight: 500;
+    font-size: 1em;
+    padding: 10px 20px;
+    /* border-radius: 5px; */
+    background-color: #f8d1b8;
+    border: 2px solid #000;
+    transition: ease-in-out 0.3s;
+}
+
+.choose-again {
+    margin-top: 1em;
+    background-color: #000;
+    color: #fff;
+    transition: ease-in-out 0.3s;
+}
+
+.choose-btn:hover,
+.choose-again:hover {
+    background-color: #8f2929;
+    border: 2px solid #8f2929;
+    color: #fff;
+}
