@@ -1,0 +1,26 @@
+/*
+
+#BD3E34
+#EBB696
+#F1E4DE 
+
+*/
+
+h1 {
+    font-size: 3.5em;
+    letter-spacing: 5px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 span {
+    color: #BD3E34;
+}
+
+h3 {
+    text-align: center;
+    letter-spacing: 0.7em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+}
