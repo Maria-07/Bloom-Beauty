@@ -1,6 +1,6 @@
 # Getting Started with Bloom Beauty
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bloom Beauty websites Live LINK : [Bloom Beauty](https://bloom-beauty.netlify.app/).
 
 ## Available Scripts
 
