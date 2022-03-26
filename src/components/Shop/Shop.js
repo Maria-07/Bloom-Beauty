@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
+import ErrorMsg from "../ErrorMsg/ErrorMsg";
 import Product from "../Product/Product";
 import "./Shop.css";
 
 const Shop = () => {
-  let click = 0;
+  let isclick = true;
+  //   let click = 0;
   const [products, setProducts] = useState([]);
   const [cartItems, setCartItems] = useState([]);
+  const [click, setClick] = useState(0);
 
   useEffect(() => {
     fetch("fakeData.json")
@@ -18,28 +21,33 @@ const Shop = () => {
 
   const addToCartProduct = (selectedProduct) => {
     if (click < 4) {
+      //   console.log(click);
       // console.log(selectedProduct.name);
       const newCart = [...cartItems, selectedProduct];
       // console.log(newCart);
       setCartItems(newCart);
-      click++;
+      //   click = click + 1;
+      setClick(click + 1);
     } else {
+      isclick = false;
     }
   };
 
   return (
-    <div className="shop-container">
-      <div className="product-container">
-        {products.map((product) => (
-          <Product
-            product={product}
-            key={product.id}
-            addToCart={addToCartProduct}
-          ></Product>
-        ))}
-      </div>
-      <div className="cart-container">
-        <Cart cart={cartItems}></Cart>
+    <div>
+      <div className="shop-container">
+        <div className="product-container">
+          {products.map((product) => (
+            <Product
+              product={product}
+              key={product.id}
+              addToCart={addToCartProduct}
+            ></Product>
+          ))}
+        </div>
+        <div className="cart-container">
+          <Cart cart={cartItems}></Cart>
+        </div>
       </div>
     </div>
   );

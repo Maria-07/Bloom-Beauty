@@ -2,6 +2,7 @@ import React from "react";
 import "./SelectItem.css";
 
 const SelectItem = ({ item }) => {
+  // console.log(item);
   const { name, img } = item;
   return (
     <div className="item">
