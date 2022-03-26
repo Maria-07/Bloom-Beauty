@@ -38,6 +38,7 @@ const Shop = () => {
   const removeItems = () => {
     // console.log('maria');
     setCartItems([]);
+    setClick(0);
   };
 
   return (
