@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
-import ErrorMsg from "../ErrorMsg/ErrorMsg";
 import Product from "../Product/Product";
 import "./Shop.css";
 
 const Shop = () => {
-  let isclick = true;
+  // let isclick = true;
   //   let click = 0;
   const [products, setProducts] = useState([]);
   const [cartItems, setCartItems] = useState([]);
@@ -28,9 +27,13 @@ const Shop = () => {
       setCartItems(newCart);
       //   click = click + 1;
       setClick(click + 1);
-    } else {
-      isclick = false;
     }
+  };
+
+  // remove items
+  const removeItems = () => {
+    // console.log('maria');
+    setCartItems([]);
   };
 
   return (
@@ -46,7 +49,7 @@ const Shop = () => {
           ))}
         </div>
         <div className="cart-container">
-          <Cart cart={cartItems}></Cart>
+          <Cart cart={cartItems} removeItems={removeItems}></Cart>
         </div>
       </div>
     </div>

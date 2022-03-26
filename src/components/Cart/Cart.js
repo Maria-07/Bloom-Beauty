@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import SelectItem from "../SelectItem/SelectItem";
 import "./Cart.css";
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, removeItems }) => {
   // const { name, img } = cart;
   const [items, setItems] = useState(-1);
   // console.log(cart[1].name);
@@ -27,9 +27,19 @@ const Cart = ({ cart }) => {
         Choose 1 for me
       </button>
       <br />
-      <button className="choose-again">Choose Again</button>
+      <button
+        className="choose-again"
+        onClick={() => {
+          setItems(-1);
+          removeItems();
+        }}
+      >
+        Choose Again
+      </button>
       {items > -1 && (
-        <div className="random">{cart[items].name} is for you</div>
+        <div className="random">
+          <span>"{cart[items].name}"</span> is for you :)
+        </div>
       )}
     </div>
   );
