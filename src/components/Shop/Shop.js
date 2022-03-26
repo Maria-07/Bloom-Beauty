@@ -28,7 +28,7 @@ const Shop = () => {
       //   click = click + 1;
       setClick(click + 1);
     } else {
-      setClick(-1);
+      setClick(5);
     }
   };
 
@@ -43,7 +43,7 @@ const Shop = () => {
   return (
     <div>
       <div className="error">
-        {click === -1 && (
+        {click === 5 && (
           <div>
             <span>Sorry !!</span> You Can Not Add more Than 4 products :)
           </div>
