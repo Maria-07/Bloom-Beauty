@@ -52,5 +52,23 @@
     "img": "https://static.wixstatic.com/media/c837a6_3d313c67961441ffae67d563f9840942~mv2.jpg/v1/fill/w_239,h_318,al_c,q_80,usm_0.66_1.00_0.01/c837a6_3d313c67961441ffae67d563f9840942~mv2.webp",
     "price": 31,
     "name": "Antioxidant Face Cleanser"
+  },
+  {
+    "id": "623ddd32c075e5ba6fcb1x5b",
+    "img": "https://static.wixstatic.com/media/c837a6_5aadd292132a4e7395187cb527bee8a7~mv2.jpg/v1/fill/w_239,h_318,al_c,q_80,usm_0.66_1.00_0.01/c837a6_5aadd292132a4e7395187cb527bee8a7~mv2.webp",
+    "price": 31,
+    "name": "Smooth Shine Lipstick"
+  },
+  {
+    "id": "623ddd32c075e5ba6fma1a5b",
+    "img": "https://static.wixstatic.com/media/c837a6_e092f31740f74c0e898d3bcd24b02701~mv2.jpg/v1/fill/w_165,h_219,al_c,q_80,usm_0.66_1.00_0.01/c837a6_e092f31740f74c0e898d3bcd24b02701~mv2.webp",
+    "price": 31,
+    "name": "Body Butter"
+  },
+  {
+    "id": "623ddd32c075e5ba6fdfb1a5b",
+    "img": "https://static.wixstatic.com/media/c837a6_9031bc60b493427e9a06c396342c1c82~mv2.jpg/v1/fill/w_165,h_219,al_c,q_80,usm_0.66_1.00_0.01/c837a6_9031bc60b493427e9a06c396342c1c82~mv2.webp",
+    "price": 31,
+    "name": "Hair Dryer"
   }
 ]

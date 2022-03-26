@@ -27,8 +27,12 @@ const Shop = () => {
       setCartItems(newCart);
       //   click = click + 1;
       setClick(click + 1);
+    } else {
+      setClick(-1);
     }
   };
+
+  console.log(click);
 
   // remove items
   const removeItems = () => {
@@ -38,6 +42,13 @@ const Shop = () => {
 
   return (
     <div>
+      <div className="error">
+        {click === -1 && (
+          <div>
+            <span>Sorry !!</span> You Can Not Add more Than 4 products :)
+          </div>
+        )}
+      </div>
       <div className="shop-container">
         <div className="product-container">
           {products.map((product) => (

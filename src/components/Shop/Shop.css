@@ -15,11 +15,20 @@
     padding: 3.5em;
 }
 
+.error {
+    margin-top: 3em;
+    font-size: 1.5em;
+}
+
+.error span {
+    color: red;
+}
+
 /* for mobile  */
 @media only screen and (max-width: 688px) {
     .product-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 30px;
+        /* gap: 30px; */
     }
 }
